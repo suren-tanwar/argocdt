@@ -23,13 +23,7 @@ spec:
               name: mysql-db-secret
               key: password         
         - name: MYSQL_DATABASE
-          valueFrom:
-            secretKeyRef:
-              name: mysql-db-secret
-              key: database         
-        # volumeMounts:
-        # - name: mysql-pv
-        #   mountPath: /var/lib/mysql         
+          value: wordpress            
         ports:
         - containerPort: 3306
 

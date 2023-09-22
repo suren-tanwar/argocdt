@@ -17,6 +17,7 @@ Create Namespace argocd and Apply argocd deployment yaml …(O
   3. Check All pods are running or not
 
 kubectl get pods -n argocd
+kubectl port-forward svc/argocd-server -n argocd 8080:443
    - Configure the connection between your GitOps repository and ArgoCD.
    Set up Argo CD:
    First, ensure that you have Argo CD installed and configured in your Kubernetes cluster.

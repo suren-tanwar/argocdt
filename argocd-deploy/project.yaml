@@ -5,4 +5,4 @@ metadata:
   namespace: argocd
 spec:
   sourceRepos:
-  - <YOUR_GIT_REPO_URL>
+  - https://github.com/suren-tanwar/argocdt.git
